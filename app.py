@@ -253,7 +253,7 @@ if st.button("🏅 पदक डाटा टेबल"):
 # =======================
 USER_CREDENTIALS = {
     "admin": "Ashutosh",
-    "ashu": "police@2025",
+    "Ashutosh": "police@2025",
     "officer": "medal123"
 }
 
@@ -287,3 +287,4 @@ else:
     # ======== Place your existing app code here ========
     st.title("🏅 Uttarakhand Police Medalist Data Search and Update")
     st.write("Now your secured app starts here...")
+

@@ -8,8 +8,8 @@ from openpyxl import load_workbook
 # USER LOGIN SYSTEM
 # =======================
 USER_CREDENTIALS = {
-    "admin": "Ashutosh",
-    "Ashutosh": "police@2025",
+    "admin": "1234",
+    "ashu": "police2025",
     "officer": "medal123"
 }
 
@@ -27,23 +27,6 @@ def login():
             st.rerun()
         else:
             st.error("❌ Invalid Username or Password")
-
-# =======================
-# MAIN APP WITH LOGIN
-# =======================
-if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
-    login()
-else:
-    st.sidebar.success(f"👋 Welcome, {st.session_state['username']}")
-
-    if st.sidebar.button("🚪 Logout"):
-        st.session_state.clear()
-        st.rerun()
-
-    # ======== Place your existing app code here ========
-    st.title("🏅 Uttarakhand Police Medalist Data Search and Update")
-    st.write("Now your secured app starts here...")
-
 # =======================
 # File name
 # =======================
@@ -286,6 +269,7 @@ if st.button("🏅 पदक डाटा टेबल"):
             hide_index=True
 
         )
+
 
 
 
